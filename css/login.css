@@ -27,6 +27,17 @@ body{
     margin-left: 20%;
 }
 
+.card-body{
+    text-align: center;
+}
+
+.ind-download-btn{
+    font-size: 20px;
+    margin: 3%;
+    padding: 2% 9%;
+    margin-right: 30px;
+  }
+
 li{
     margin: 5%;
 }
