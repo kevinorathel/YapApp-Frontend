@@ -16,7 +16,7 @@
 
         <!-- Personal Style Sheet -->
 
-        <link rel="stylesheet" href="css/login.css">
+        <link rel="stylesheet" href="css/signup.css">
         <link rel="icon" href="images/YapApp.ico">
 
         <!-- Google Fonts -->
@@ -34,9 +34,45 @@
         <nav class="navbar navbar-expand-lg navbar-dark">
             <a class="navbar-brand" href="index.html" id="branding">YapApp</a>
         </nav>
-        <h1>Hi Frends</h1>
+        <div class="row">
+            <div class="card mb-4 rounded-3 shadow-sm">
 
-        <h2>Hello Goois</h2>
+                <div class="card-header py-3">
+                    <h4 class="my-0 fw-normal">Sign-up</h4>
+                </div>
+
+                <div class="card-body">
+                    <ul class="list-unstyled mt-3 mb-4">
+                    <tr>    
+                        <li><label>Username: </label>
+                        <input type="text" name="username"></li>
+                    </tr>
+                    <tr>    
+                        <li><label>Email-ID: </label>
+                        <input type="email" name="emailId"></li>
+                    </tr>
+                    <tr>    
+                        <li><label>First Name: </label>
+                        <input type="text" name="firstName"></li>
+                    </tr>
+                    <tr>    
+                        <li><label>Last Name: </label>
+                        <input type="text" name="lastName"></li>
+                    </tr>
+                    <tr>
+                        <li><label>Password: </label>
+                        <input type="password" name="password"></li>
+                    </tr>
+                    <tr>
+                        <li><label>Re-Enter Password: </label>
+                        <input type="password" name="confirmPassword"></li>
+                    </tr>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Signup</button>
+                
+            </div>
+        </div>
         
     </body>
 </html>
