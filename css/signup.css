@@ -30,17 +30,32 @@ body{
 li{
   margin: 5%;
 }
+
+.ind-download-btn{
+  font-size: 20px;
+  margin: 3%;
+  padding: 2% 9%;
+  margin-right: 30px;
+}
+
 label{
   display: inline-block;
   float: left;
   clear: left;
   width: 250px;
-  text-align: right;
+  text-align: center;
 }
+
 input {
-display: inline-block;
-float: left;
+  display: inline-block;
+  float: left;
 }
+
+.input-box{
+  width: 15rem;
+  height: 2rem;
+}
+
 tr{
   margin-top: 20%;
   margin-bottom: 20%;
