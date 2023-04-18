@@ -7,7 +7,7 @@ body{
 
 .navbar{
     background-color: #5F7161;
-    padding: 0 0 3rem; 
+    padding-bottom: 3rem; 
 }
 
 #branding{
@@ -17,6 +17,10 @@ body{
     font-weight: bold;  
     margin-top: 2%;
     margin-left: 4%;
+}
+
+#navbarSupportedContent{
+    margin-right: 50px;
 }
 
 .card{
@@ -40,4 +44,11 @@ body{
 
 li{
     margin: 5%;
+}
+
+.copyright{
+    color: gray ;
+    font-size: medium;
+    font-weight: lighter;
+    margin-top: 1rem;
 }
