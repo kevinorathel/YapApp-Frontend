@@ -40,3 +40,16 @@ body{
     font-weight: lighter;
     margin-top: 1rem;
 }
+.download-link{
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.download-link-img{
+  display: block;
+  margin-top: 5%;
+  margin-bottom: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 8%;
+}
