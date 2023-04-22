@@ -5,15 +5,18 @@ var connection = mysql.createConnection({
   user     : 'root',
   password : '',
   database : 'yapapp'
-})
+});
 
 connection.connect();
 
-connection.query('SELECT * from msgqueue WHERE id = 1', function (error, results, fields) {
-    if (error){
-        console.log("Error: ", error);
+function getUserData(userId, callback) {
+  connection.query('SELECT * from users WHERE id = ?', [userId], function (error, results, fields) {
+    if (error) {
+      callback(error);
+    } else {
+      callback(null, results[0]);
     }
-    else{
-        console.log('The solution is: ', results);
-    }
-});
+  });
+}
+
+module.exports = getUserData;
