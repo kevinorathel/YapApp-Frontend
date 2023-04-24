@@ -1,5 +1,5 @@
 body{
-    background-color: #FFBF9B;
+    background-color: #A5C9CA;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -10,7 +10,7 @@ body{
 }
 
 #branding{
-    color: #FFF4E0;
+    color: #E7F6F2;
     font-family: 'Lilita One', cursive;
     font-size: 2.5rem;
     font-weight: bold;  
@@ -28,8 +28,8 @@ body{
 /* Header Section */
 
 #header{
-    background-color: #4D4D4D;
-    color: #FFF4E0;
+    background-color: #395B64;
+    color: #B4E4FF;
     padding: 3% 15% 5%;
 }
 
@@ -49,7 +49,7 @@ body{
     margin-right: 30px;
 }
 
-#ind-login-btn{
+/* #ind-login-btn{
     background-color: #F15A59;
     color: white;
 }
@@ -57,7 +57,7 @@ body{
 #ind-login-btn:hover{
     background-color: #EF8172;
     color: white;
-}
+} */
 
 .lady-texting{
     border-radius: 7%;
@@ -83,7 +83,7 @@ body{
 }
 
 .icons:hover{
-    color: #B46060;
+    color: #395B64;
 }
 
 /* Footer */
@@ -94,7 +94,7 @@ body{
 }
 
 .copyright{
-    color: gray ;
+    color: #395B64 ;
     font-size: medium;
     font-weight: lighter;
     margin-top: 1rem;
