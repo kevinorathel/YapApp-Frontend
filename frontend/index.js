@@ -4,20 +4,11 @@ const msgsContainer = document.querySelector('#msgs');
 var count = 0;
 
 
-// var userName;
-// var firstName;
-// var lastName;
-// var imageURL;
+var userName;
+var firstName;
+var lastName;
+var imageURL;
 
-// const getUserData = require('../Backend/index.js');
-
-// getUserData(1, function (error, userData) {
-//     if (error) {
-//       console.log("Error: ", error);
-//     } else {
-//       console.log('The username is: ', userData.userName);
-//     }
-//   });
 
 // document.addEventListener("keypress", function(event){
 //     if(event.key === "Enter"){
@@ -45,7 +36,7 @@ form.addEventListener('submit', (event) => {
           </div>
           <p>${msgContent}</p>
         `;
-        msgsContainer.prepend(msg);
+        msgsContainer.append(msg);
         msgInput.value = '';
       }
       count++;
@@ -61,7 +52,7 @@ form.addEventListener('submit', (event) => {
           </div>
           <p>${msgContent}</p>
         `;
-        msgsContainer.prepend(msg);
+        msgsContainer.append(msg);
         msgInput.value = '';
       }
       count = 0;

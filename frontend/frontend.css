@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    background-color: #FFBF9B;
   }
   
   header {
@@ -45,6 +46,7 @@
   }
   
   .msg {
+    background-color: #FFF4E0;
     border: 1px solid #ccc;
     padding: 10px;
     margin-bottom: 10px;
@@ -66,12 +68,18 @@
   .msg-header h2 {
     margin: 0;
     font-size: 18px;
-    font-weight: normal;
+    font-weight: b;
   }
   
   .msg p {
-    margin: 0;
+    margin: 5% 10%;
     font-size: 16px;
+  }
+
+  footer{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
   }
   
 
