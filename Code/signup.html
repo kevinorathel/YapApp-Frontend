@@ -59,58 +59,62 @@
                     <h4 class="my-0 fw-normal">Sign-up</h4>
                 </div>
 
-                <div class="card-body">
+                <form>
+                    <div class="card-body">
 
-                    <ol>
-                        <div class="table-row">
-                            <li>
-                                <label class="col-lg-6">Username: </label>
-                                <input type="text" name="username" class="col-lg-6 input-box">
-                            </li>
-                        </div>    
+                        <ol>
+                            <div class="table-row">
+                                <li>
+                                    <label class="col-lg-6">Username: </label>
+                                    <input type="text" name="username" id="userName" class="col-lg-6 input-box">
+                                </li>
+                            </div>    
+                            
+                            <div class="table-row">
+                                <li>
+                                    <label class="col-lg-6">Email-ID: </label>
+                                    <input type="email" name="emailId" id="email" class="col-lg-6 input-box">
+                                </li>
+                            </div>
                         
-                        <div class="table-row">
-                            <li>
-                                <label class="col-lg-6">Email-ID: </label>
-                                <input type="email" name="emailId" class="col-lg-6 input-box">
-                            </li>
-                        </div>
-                       
-                        <div class="table-row"> 
-                            <li>
-                                <label class="col-lg-6">First Name: </label>
-                                <input type="text" name="firstName" class="col-lg-6 input-box">
-                            </li>
-                        </div>
+                            <div class="table-row"> 
+                                <li>
+                                    <label class="col-lg-6">First Name: </label>
+                                    <input type="text" name="firstName" id="firstName" class="col-lg-6 input-box">
+                                </li>
+                            </div>
+                            
+                            <div class="table-row"> 
+                                <li>
+                                    <label class="col-lg-6">Last Name: </label>
+                                    <input type="text" name="lastName" id="lastName" class="col-lg-6 input-box">
+                                </li>
+                            </div>
                         
-                        <div class="table-row"> 
-                            <li>
-                                <label class="col-lg-6">Last Name: </label>
-                                <input type="text" name="lastName" class="col-lg-6 input-box">
-                            </li>
-                        </div>
+                            <div class="table-row"> 
+                                <li>
+                                    <label class="col-lg-6">Password: </label>
+                                    <input type="password" name="password" id="password" class="col-lg-6 input-box">
+                                </li>
+                            </div>
                     
-                        <div class="table-row"> 
-                            <li>
-                                <label class="col-lg-6">Password: </label>
-                                <input type="password" name="password" class="col-lg-6 input-box">
-                            </li>
-                        </div>
-                   
-                        <div class="table-row"> 
-                            <li>
-                                <label class="col-lg-6">Re-Enter Password: </label>
-                                <input type="password" name="confirmPassword" class="col-lg-6 input-box">
-                            </li>
-                        </div>
+                            <div class="table-row"> 
+                                <li>
+                                    <label class="col-lg-6">Re-Enter Password: </label>
+                                    <input type="password" name="confirmPassword" id="confirmPassword" class="col-lg-6 input-box">
+                                </li>
+                            </div>
 
-                    </ol>   
-                    
-                </div>
+                        </ol>   
+                        
+                    </div>
+                </form>
 
                 <a button type="submit" class="btn btn-primary ind-download-btn">Signup</button></a>
                 <a button type="submit" class="btn btn-outline-dark ind-download-btn" href="../index.html">Cancel</button></a>
                 
+                <script src="../Backend/signup.js" charset="UTF-8"></script>
+
             </div>
         </div>
         
