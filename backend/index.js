@@ -14,19 +14,31 @@ var connection = mysql.createConnection({
   database : 'yapapp'
 });
 
-
 connection.connect();
 
-function getUserData(userId, callback) {
+
+var values = [id, userName, firstName, lastName, email, imageURL, password];
+
+function getUser(userId, callback) {
   connection.query('SELECT * from users WHERE id = ?', [userId], function (error, results, fields) {
     if (error) {
-      callback(error);
+      console.log("Unexpected Error: " + error);
     } else {
-      callback(results[0]);
+      console.log("User with ID (" + results[0].id + ") retrieved: " + results[0].userName);
     }
   });
 }
 
-module.exports = getUserData;
+function addUser(values) {
+  connection.query("INSERT INTO users (`id`, `username`, `firstname`, `lastname`, `emailId`, `imageUrl`, `password`) VALUES (?, ?, ?, ?, ?, ?, ?)", values, function (error, results, fields) {
+    if (error) {
+      console.log("Unexpected Error: " + error);
+    } else {
+      console.log("User: "+ values[2] + " " + values[3] +" added successfully");
+    }
+  });
+}
+
+// module.exports = getUserData;
 
 

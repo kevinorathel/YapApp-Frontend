@@ -15,9 +15,6 @@ signUp.addEventListener('click', (event) => {
         alert("Account created succesfully!");
         window.location.href = "../Code/login.html";
     }
-    else{
-        alert("Ran into an error. Please check your credentials.");
-    }
 });
 
 function checker(userName, email, firstName, lastName, password, confirmPassword){

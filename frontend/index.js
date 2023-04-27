@@ -10,17 +10,6 @@ var lastName;
 var imageURL;
 
 
-// document.addEventListener("keypress", function(event){
-//     if(event.key === "Enter"){
-//         console.log(event.key);
-//         alert("Oh nice this works!");
-//     }
-// })
-
-
-
-
-
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
