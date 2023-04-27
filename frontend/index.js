@@ -21,7 +21,6 @@ var imageURL;
 
 
 
-
 form.addEventListener('submit', (event) => {
   event.preventDefault();
   const msgContent = msgInput.value;
