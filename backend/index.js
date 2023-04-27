@@ -17,7 +17,7 @@ var connection = mysql.createConnection({
 
 connection.connect();
 
-function getUserData(userId, callback) {
+function getUser(userId, callback) {
   connection.query('SELECT * from users WHERE id = ?', [userId], function (error, results, fields) {
     if (error) {
       callback(error);
@@ -26,6 +26,21 @@ function getUserData(userId, callback) {
     }
   });
 }
+
+
+var values = [userName, firstName, lastName, email, password];
+
+function addUser(userId, callback) {
+  connection.query("INSERT INTO users (username, firstname, lastname, email, password) VALUES (?, ?, ?, ?, ?)", values, function (error, results, fields) {
+    if (error) {
+      callback(error);
+    } else {
+      console.log("User: "+ userName +" added successfully")
+      callback(results[0]);
+    }
+  });
+}
+
 
 module.exports = getUserData;
 
