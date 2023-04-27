@@ -16,6 +16,8 @@ var connection = mysql.createConnection({
 
 
 connection.connect();
+var values = [4, "its.jo", "Joseph", "Thomas", "joseph@gmail.com", "../images/joseph-dp-circle.png", "itsjo.password"];
+addUser(values);
 
 function getUser(userId, callback) {
   connection.query('SELECT * from users WHERE id = ?', [userId], function (error, results, fields) {
@@ -28,20 +30,19 @@ function getUser(userId, callback) {
 }
 
 
-var values = [userName, firstName, lastName, email, password];
+// var values = [userName, firstName, lastName, email, password];
 
-function addUser(userId, callback) {
-  connection.query("INSERT INTO users (username, firstname, lastname, email, password) VALUES (?, ?, ?, ?, ?)", values, function (error, results, fields) {
+
+function addUser(values) {
+  connection.query("INSERT INTO users (`id`, `username`, `firstname`, `lastname`, `emailId`, `imageUrl`, `password`) VALUES (?, ?, ?, ?, ?, ?, ?)", values, function (error, results, fields) {
     if (error) {
-      callback(error);
+      console.log("Unexpected Error: " + error);
     } else {
-      console.log("User: "+ userName +" added successfully")
-      callback(results[0]);
+      console.log("User: "+ values[2] + " " + values[3] +" added successfully");
     }
   });
 }
 
-
-module.exports = getUserData;
+// module.exports = getUserData;
 
 
