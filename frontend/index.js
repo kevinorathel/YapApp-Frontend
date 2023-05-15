@@ -30,7 +30,7 @@ form.addEventListener('submit', (event) => {
       }
       count++;
   }
-  else if (count == 1){
+  else{
     if (msgContent.trim() !== '') {
         const msg = document.createElement('div');
         msg.classList.add('msg');
@@ -38,22 +38,6 @@ form.addEventListener('submit', (event) => {
           <div class="msg-header">
             <img src="../images/govind-dp-circle.png" alt="Profile picture">
             <h2>Govind Rajkumar</h2>
-          </div>
-          <p>${msgContent}</p>
-        `;
-        msgsContainer.append(msg);
-        msgInput.value = '';
-      }
-      count++;
-  }
-  else{
-    if (msgContent.trim() !== '') {
-        const msg = document.createElement('div');
-        msg.classList.add('msg');
-        msg.innerHTML = `
-          <div class="msg-header">
-            <img src="../images/devika-dp-circle.png" alt="Profile picture">
-            <h2>Devika Salimkumar</h2>
           </div>
           <p>${msgContent}</p>
         `;
