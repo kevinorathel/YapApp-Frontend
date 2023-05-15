@@ -44,7 +44,7 @@ function checker(userName, email, firstName, lastName, password, confirmPassword
         return false;
     }
     else if(password != confirmPassword){
-        alert("Password and Confirm Password dont match.");
+        alert("Passwords dont match.");
         return false;
     }
     else{
