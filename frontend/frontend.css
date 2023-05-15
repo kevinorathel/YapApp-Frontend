@@ -6,7 +6,7 @@
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #FFBF9B;
+    background-color: #A5C9CA;
   }
   
   header {
@@ -86,12 +86,12 @@
   /* NavBar */
 
   .navbar{
-    background-color: #5F7161;
+    background-color: #395B64;
     padding-bottom: 3rem; 
 }
 
 #branding{
-    color: #EFEAD8;
+    color: #E7F6F2;
     font-family: 'Lilita One', cursive;
     font-size: 2.5rem;
     font-weight: bold;  
