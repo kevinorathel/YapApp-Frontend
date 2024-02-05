@@ -1,4 +1,4 @@
 # YapApp
 A Chatting app 
 
-Check it out -> https://kevinorathel.github.io/YapApp/
+Check it out -> https://kevinorathel.github.io/YapApp-Frontend/
