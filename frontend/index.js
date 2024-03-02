@@ -2,7 +2,7 @@ const form = document.querySelector('form');
 const msgInput = document.querySelector('#msg-input');
 const msgsContainer = document.querySelector('#msgs');
 var count = 0;
-
+var userId;
 
 var userName;
 var firstName;
@@ -16,12 +16,16 @@ form.addEventListener('submit', (event) => {
   const msgContent = msgInput.value;
   if(count == 0){
     if (msgContent.trim() !== '') {
+        userId = 1;
+        firstName = 'Kevin';
+        lastName = 'Joseph';
+        userName = firstName + ' ' + lastName;
         const msg = document.createElement('div');
         msg.classList.add('msg');
         msg.innerHTML = `
           <div class="msg-header">
-            <img src="../images/kevin-dp-circle.png" alt="Profile picture">
-            <h2>Kevin Joseph</h2>
+            <img src="../images/${userId}.png" alt="Profile picture">
+            <h2>${userName}</h2>
           </div>
           <p>${msgContent}</p>
         `;
@@ -32,12 +36,16 @@ form.addEventListener('submit', (event) => {
   }
   else{
     if (msgContent.trim() !== '') {
+        userId = 3;
+        firstName = 'Govind';
+        lastName = 'Rajkumar';
+        userName = firstName + ' ' + lastName;
         const msg = document.createElement('div');
         msg.classList.add('msg');
         msg.innerHTML = `
           <div class="msg-header">
-            <img src="../images/govind-dp-circle.png" alt="Profile picture">
-            <h2>Govind Rajkumar</h2>
+            <img src="../images/${userId}.png" alt="Profile picture">
+            <h2>${userName}</h2>
           </div>
           <p>${msgContent}</p>
         `;
