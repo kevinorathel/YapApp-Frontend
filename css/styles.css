@@ -31,6 +31,7 @@ body{
     background-color: #395B64;
     color: #B4E4FF;
     padding: 3% 15% 5%;
+    max-height: 700px;
 }
 
 .heading{
