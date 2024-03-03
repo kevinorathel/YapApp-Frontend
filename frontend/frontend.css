@@ -2,9 +2,10 @@
     box-sizing: border-box;
   }
   
-  body {
+  body, html {
     margin: 0;
     padding: 0;
+    height: 100%;
     font-family: Arial, sans-serif;
     background-color: #A5C9CA;
   }
@@ -17,11 +18,23 @@
     background-color: #1da1f2;
     color: white;
   }
+
+  .textbox {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin-left: 450px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #A5C9CA;
+  }
   
-  main {
+  .container {
     max-width: 600px;
-    margin: 0 auto;
+    margin-left: 450px;
     padding: 20px;
+    bottom: 50px;
   }
 
   .input-form {
@@ -37,6 +50,8 @@
     font-size: 1rem;
     color: #000000;
     transition: border 150ms cubic-bezier(0.4,0,0.2,1);
+    width: 65%;
+    background-color: #E7F6F2;
   }
   
   .textUser {
@@ -81,7 +96,7 @@
     font-weight: 600;
     transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
     overflow: hidden;
-    margin-left: 10px;
+    margin-left: 20px;
   }
   
   .button::before {
@@ -165,7 +180,7 @@
 
   footer{
     max-width: 600px;
-    margin: 0 auto;
+    margin-left: 450px;
     padding: 20px;
   }
   
@@ -174,7 +189,7 @@
 
   .navbar{
       background-color: #395B64;
-      padding-bottom: 3rem; 
+      padding-bottom: 10px; 
   }
 
   #branding{
