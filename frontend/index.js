@@ -41,9 +41,9 @@ form.addEventListener('submit', (event) => {
         lastName = 'Rajkumar';
         userName = firstName + ' ' + lastName;
         const msg = document.createElement('div');
-        msg.classList.add('msg');
+        msg.classList.add('msg-else');
         msg.innerHTML = `
-          <div class="msg-header">
+          <div class="msg-header-else">
             <img src="../images/${userId}.png" alt="Profile picture">
             <h2>${userName}</h2>
           </div>
