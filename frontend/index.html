@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="frontend.css">
     <link rel="icon" href="../images/YapApp.ico">
   </head>
+  
   <body>
       
       <nav class="navbar navbar-expand-md navbar-dark">
@@ -32,20 +33,26 @@
         </button>
       </nav>
 
+      <div class="container">
+        <div class="user-container">
 
-
-      <div class = 'container'>
-        
-        <div id="msgs">
-        </div>
-        <div class="textbox" id="new-msg">
-          <form>
-            <input class="input" placeholder="Type a message" name="text" type="text" required="" id="msg-input">
-            <button type="submit" class="button">Send</button>
-          </form>
         </div>
 
-      </div>
+        <div class = 'msg-container'>
+              
+          <div id="msgs">
+
+          </div>
+          <div class="textbox" id="new-msg">
+            <form>
+              <input class="input" placeholder="Type a message" name="text" type="text" required="" id="msg-input">
+              <button type="submit" class="button">Send</button>
+            </form>
+          </div>
+        </div>
+
+
+    
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
