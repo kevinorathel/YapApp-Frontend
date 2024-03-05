@@ -5,9 +5,16 @@
 body, html {
   font-family: Arial, sans-serif;
   background-color: #A5C9CA;
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
+  margin: 0; 
+  padding: 0; 
 }
+
+body {
+  height: 100vh;
+  margin: 0; 
+  padding: 0; 
+}
+
 
 header {
   display: flex;
@@ -60,19 +67,21 @@ header {
 }
 
 .user-container {
-  background-color: #9BA4B5;
+  background-color: #444F5A;
   width: 26%;
   padding: 20px;
+  overflow-y: auto;
+  padding: 0%;
 }
 
 .textbox {
   position: fixed;
   bottom: 0;
-  left: 26.4%;
-  width: 73.6%;
+  left: 26%;
+  width: 74%;
   padding: 10px;
   box-sizing: border-box;
-  background-color: #A5C9CA;
+  background-color: #444F5A;
 }
 
 .input {
@@ -96,7 +105,7 @@ header {
 
 .input:hover {
   border: solid 1.9px #000002;
-  transform: scale(1.03);
+  /* transform: scale(1.03); */
   box-shadow: 1px 1px 5px rgba(133, 133, 133, 0.523);
   transition: border-color 1s ease-in-out;
 }
@@ -173,6 +182,8 @@ header {
   margin-bottom: 10px;
 }
 
+
+
 .msg-else {
   max-width: 600px;
   border-radius: 18px;
@@ -211,6 +222,44 @@ header {
 .msg-else p {
   margin: 5% 10%;
   font-size: 16px;
+}
+
+#users{
+  width: 100%;
+  display: block;
+}
+
+.user {
+  border-radius: 10px;
+  background: #9BA4B5;
+  background-color: #9BA4B5;
+  border: 1px solid #444F5A;
+  padding: 10px;
+}
+
+.user-header {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.user-header img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-header h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: b;
+}
+
+.user p {
+  text-align: center;
+  font-size: 15px;
 }
 
 footer {

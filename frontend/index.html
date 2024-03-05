@@ -29,20 +29,24 @@
   <body>
       
       <nav class="navbar navbar-expand-md navbar-dark">
-        <a class="navbar-brand" href="../index.html" id="branding">YapApp</a>
-        </button>
+        <div class="title-container">
+          <div class="msg-title-container"></div>
+          <div class="user-title-container"></div>
+        </div>
       </nav>
 
       <div class="container">
+
         <div class="user-container">
 
+          <div id="users"></div>
+          
         </div>
+
 
         <div class = 'msg-container'>
               
-          <div id="msgs">
-
-          </div>
+          <div id="msgs"></div>
           <div class="textbox" id="new-msg">
             <form>
               <input class="input" placeholder="Type a message" name="text" type="text" required="" id="msg-input">
