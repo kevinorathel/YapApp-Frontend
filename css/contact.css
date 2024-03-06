@@ -1,17 +1,17 @@
 body{
-    background-color: #A5C9CA;
+    background-color: #DCFFB7;
     font-family: 'Montserrat', sans-serif;
 }
 
 /* Navigation Bar */
 
 .navbar{
-    background-color: #395B64;
+    background-color: #AD8B73;
     padding-bottom: 3rem; 
 }
 
 #branding{
-    color: #E7F6F2;
+    color: #A7D397;
     font-family: 'Lilita One', cursive;
     font-size: 2.5rem;
     font-weight: bold;  

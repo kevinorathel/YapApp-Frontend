@@ -10,7 +10,7 @@ body{
 }
 
 #branding{
-    color: #739072;
+    color: #A7D397;
     font-family: 'Lilita One', cursive;
     font-size: 2.5rem;
     font-weight: bold;  
@@ -29,7 +29,7 @@ body{
 
 #header{
     background-color: #AD8B73;
-    color: #DDFFBB;
+    color: #CDFADB;
     padding: 3% 15% 5%;
     max-height: 700px;
 }
@@ -95,7 +95,7 @@ body{
 }
 
 .copyright{
-    color: #395B64 ;
+    color: #395B64;
     font-size: medium;
     font-weight: lighter;
     margin-top: 1rem;
