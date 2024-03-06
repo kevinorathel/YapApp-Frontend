@@ -70,3 +70,57 @@ tr{
   margin-top: 20%;
   margin-bottom: 20%;
 }
+
+.profile-photo-input {
+  display: none;
+}
+
+.profile-photo-label {
+  display: block;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  background-color: #000000;
+  color: white;;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.profile-photo-label:hover {
+  opacity: 0.8;
+}
+
+.profile-photo-preview {
+  width: 150px;
+  height: 150px;
+  margin: 10px auto;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-photo-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+button {
+  background-color: #1da1f2;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
