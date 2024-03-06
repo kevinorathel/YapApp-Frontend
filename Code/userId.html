@@ -28,23 +28,7 @@
         
 
         <title>Create User | YapApp</title>
-        <script>
-            // JavaScript to display the selected profile photo preview
-        function showPreview(event) {
-            var input = event.target;
-            var reader = new FileReader();
-            reader.onload = function () {
-                var preview = document.getElementById('profile-photo-preview');
-                preview.style.display = 'block';
-                if (input.files.length > 0) {
-                    preview.innerHTML = '<img src="' + reader.result + '">';
-                } else {
-                    preview.innerHTML = '<img src="../images/generic-pfp.jfif">';
-                }
-            }
-            reader.readAsDataURL(input.files[0]);
-        }
-        </script>
+        
     </head>
     <body>
 
@@ -69,16 +53,14 @@
         </nav>
 
         <div class="container">
-            <h2>Create User</h2>
+            <h2>Login</h2>
             <form>
-                <div id="profile-photo-preview" class="profile-photo-preview">
-                    <img src="../images/generic-pfp.jfif">
-                </div>
-                <label for="profile-photo" class="text-label">Profile Photo:</label>
-                <input type="file" id="profile-photo" name="profile-photo" accept="image/*" onchange="showPreview(event)" class="profile-photo-input">
-                <label for="profile-photo" class="profile-photo-label">Select a Photo</label>
+                
+                
                 <label for="username" class="text-label">Username:</label>
                 <input type="text" id="username" name="username" required>
+                <label for="username" class="text-label">Password:</label>
+                <input type="password" id="username" name="username" required>
                 
                 <a button type="submit" class="btn btn-primary ind-download-btn" href="./login.html">Confirm</button></a>
             </form>
