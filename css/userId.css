@@ -70,7 +70,7 @@ li{
     margin-top: 100px;
     padding: 20px;
     border-radius: 20px;
-    background-color: #E7F6F2;
+    background-color: #E1F0DA;
 }
 
 .container h2 {
@@ -78,7 +78,7 @@ li{
 }
 
 
-.container input[type=text] {
+.container input{
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -87,6 +87,7 @@ li{
     border-radius: 10px;
     box-sizing: border-box;
 }
+
 
 .container .profile-photo-input {
     display: none;
@@ -138,4 +139,8 @@ li{
 
 .container button:hover {
     opacity: 0.8;
+}
+
+.btn {
+    margin-top: 20px;
 }

@@ -25,8 +25,24 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat:wght@700&display=swap" rel="stylesheet">
-        
 
+        <script>
+            // JavaScript to display the selected profile photo preview
+            function showPreview(event) {
+                var input = event.target;
+                var reader = new FileReader();
+                reader.onload = function () {
+                    var preview = document.getElementById('profile-photo-preview');
+                    preview.style.display = 'block';
+                    if (input.files.length > 0) {
+                        preview.innerHTML = '<img src="' + reader.result + '">';
+                    } else {
+                        preview.innerHTML = '<img src="../images/generic-pfp.jfif">';
+                    }
+                }
+                reader.readAsDataURL(input.files[0]);
+            }
+        </script>
         <title>Join Room | YapApp</title>
     </head>
     <body>
@@ -55,26 +71,43 @@
             <div class="card mb-4 rounded-3 shadow-sm">
 
                 <div class="card-header py-3">
-                    <h4 class="my-0 fw-normal">Join</h4>
+                    <h4 class="my-0 fw-normal">Create Group</h4>
                 </div>
 
-                <div class="card-body">
+                <div class="container">
+
+                    <div class="card-body">
 
 
-                        <ul class="list-unstyled mt-3 mb-4">
-                            <li><h5><label>Room ID: </label></h5></li>
-                            <li><input type="text" name="username"></li>
-                        </tr>
-                        <tr>
-                            <li><h5><label>Password: </label></h5></li>
-                            <li><input type="text" name="Password"></li>
-                        </tr>
+                        <div id="profile-photo-preview" class="profile-photo-preview">
+                            <img src="../images/generic-pfp.jfif">
+                        </div>
+                        <label for="profile-photo" class="text-label">Group Display Picture:</label>
+                        <input type="file" id="profile-photo" name="profile-photo" accept="image/*" onchange="showPreview(event)" class="profile-photo-input">
+                        <label for="profile-photo" class="profile-photo-label">Select a Photo</label>
 
+
+                    </div>
+
+                    <div class="card-body">
+
+
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li><h5><label>Room ID: </label></h5></li>
+                                <li><input type="text" name="username" class="form-control mb-3"></li>
+                            </tr>
+                            <tr>
+                                <li><h5><label>Password: </label></h5></li>
+                                <li><input type="password" name="Password" class="form-control mb-3"></li>
+                            </tr>
+
+
+                    </div>
 
                 </div>
 
-                <a button type="submit" class="btn btn-primary ind-download-btn" href="../frontend/index.html">Join</button></a>
-                <a button type="submit" class="btn btn-outline-dark ind-download-btn" href="../index.html">Cancel</button></a>
+                <button type="submit" class="btn btn-success ind-download-btn" href="../frontend/index.html">Create</button></a>
+                <button type="submit" class="btn btn-outline-dark ind-download-btn" href="../index.html">Cancel</button></a>
                 
             </div>
         </div>
