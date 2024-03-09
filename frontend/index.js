@@ -1,7 +1,7 @@
 const form = document.querySelector('form');
 const msgInput = document.querySelector('#msg-input');
 const msgsContainer = document.querySelector('#msgs');
-const userContainer = document.querySelector('#users');
+const userContainer = document.querySelector('.users');
 var count = 0;
 var userId;
 
@@ -16,10 +16,11 @@ document.addEventListener("DOMContentLoaded", function() {
   user.innerHTML = `
     <div class="user-header">
       <img src="../images/1.png" alt="Profile picture">
-      <h2>Kevin Joseph</h2>
+      <h2 class="tip">Kevin Joseph</h2>
     </div>
     <p> Last seen online at 10:00 pm </p>
   `;
+
   userContainer.append(user);
   const user2 = document.createElement('div');
   user2.classList.add('user');
@@ -31,6 +32,18 @@ document.addEventListener("DOMContentLoaded", function() {
     <p>Last seen online at 9:00 pm</p>
   `;
   userContainer.append(user2);
+
+  userContainer.append(user);
+  const user3 = document.createElement('div');
+  user3.classList.add('user');
+  user3.innerHTML = `
+    <div class="user-header">
+      <img src="../images/2.png" alt="Profile picture">
+      <h2>Devika Salimkumar</h2>
+    </div>
+    <p>Last seen online at 8:00 pm</p>
+  `;
+  userContainer.append(user3);
 });
 
 

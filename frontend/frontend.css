@@ -15,40 +15,66 @@ body {
   padding: 0; 
 }
 
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  background-color: #AD8B73;
-  color: white;
+.title-bar-user{
+  height: 8%;
+  background-color: #675D50;
+  margin-bottom: 10px;
+  border: solid 1px #3E3232;
 }
 
-/* NavBar */
-.navbar {
-  background-color: #AD8B73;
-  padding-bottom: 10px;
-}
-
-#branding {
-  color: #E7F6F2;
-  font-family: 'Lilita One', cursive;
-  font-size: 2.5rem;
+.title-bar-user p{
+  flex: 1;
+  font-family: "Madimi One", sans-serif;
   font-weight: bold;
-  margin-top: 2%;
-  margin-left: 4%;
+  font-style: normal;
+  font-size: x-large;
+  margin-left: 20px;
+  margin-top: 10px;
+  max-width: 50%;
 }
 
-#navbarSupportedContent {
-  margin-right: 50px;
-  margin-top: 65px;
+
+
+.title-container{
+  display: flex;
+  margin: 7px 10px;
 }
 
-.nav-item {
-  margin-left: 15px;
-  margin-right: 15px;
+.title-container img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 10px;
 }
+
+
+
+.search-input {
+  border: solid 1.9px #9e9e9e;
+  border-radius: 1.3rem;
+  background: none;
+  padding: 0.5rem;
+  font-size: 1rem;
+  color: #000000;
+  transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 90%;
+  background-color: #FFFBE9;
+  margin: 7px 12px;
+}
+
+.search-input:focus, search-input:valid {
+  outline: none;
+  box-shadow: 1px 2px 5px rgba(133, 133, 133, 0.523);
+  background-image: linear-gradient(to top, rgba(182, 182, 182, 0.199), rgba(252, 252, 252, 0));
+  transition: background 4s ease-in-out;
+}
+
+.search-input:hover {
+  border: solid 1.9px #000002;
+  box-shadow: 1px 1px 5px rgba(133, 133, 133, 0.523);
+  transition: border-color 1s ease-in-out;
+}
+
 
 .container {
   display: flex;
@@ -60,18 +86,14 @@ header {
 }
 
 .msg-container {
-  padding: 20px;
-  max-height: 625px;
   flex: 1;
   overflow-y: auto;
 }
 
 .user-container {
-  background-color: #444F5A;
+  background-color: #B3A398;
   width: 26%;
-  padding: 20px;
   overflow-y: auto;
-  padding: 0%;
 }
 
 .textbox {
@@ -105,7 +127,6 @@ header {
 
 .input:hover {
   border: solid 1.9px #000002;
-  /* transform: scale(1.03); */
   box-shadow: 1px 1px 5px rgba(133, 133, 133, 0.523);
   transition: border-color 1s ease-in-out;
 }
@@ -115,8 +136,8 @@ header {
   position: relative;
   padding: 10px 24px;
   font-size: 18px;
-  color: #A7D397;
-  border: 2px solid #A7D397;
+  color: #A8DF8E;
+  border: 2px solid #A8DF8E;
   border-radius: 34px;
   background-color: transparent;
   font-weight: 600;
@@ -135,7 +156,7 @@ header {
   border-radius: inherit;
   scale: 0;
   z-index: -1;
-  background-color: #A7D397;
+  background-color: #A8DF8E;
   transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
@@ -146,7 +167,7 @@ header {
 .button:hover {
   color: #212121;
   scale: 1.1;
-  box-shadow: 0 0px 20px #A7D397;
+  box-shadow: 0 0px 20px #A8DF8E;
 }
 
 .button:active {
@@ -173,6 +194,7 @@ header {
 }
 
 .msg {
+  margin-left: 20px;
   max-width: 600px;
   border-radius: 18px;
   background: #e0e0e0;
@@ -182,8 +204,6 @@ header {
   margin-bottom: 10px;
 }
 
-
-
 .msg-else {
   max-width: 600px;
   border-radius: 18px;
@@ -192,7 +212,7 @@ header {
   border: 1px solid #ccc;
   padding: 10px;
   margin-bottom: 10px;
-  margin-left: 600px;
+  margin-left: 620px;
 }
 
 .msg-header {
@@ -211,7 +231,7 @@ header {
 .msg-header h2 {
   margin: 0;
   font-size: 18px;
-  font-weight: b;
+  font-weight: bold;
 }
 
 .msg p {
@@ -224,24 +244,12 @@ header {
   font-size: 16px;
 }
 
-#users{
-  width: 100%;
-  display: block;
-}
-
-.user {
-  border-radius: 10px;
-  background: #9BA4B5;
-  background-color: #9BA4B5;
-  border: 1px solid #444F5A;
-  padding: 10px;
-}
 
 .user-header {
   display: flex;
   align-items: center;
   text-align: center;
-  margin-bottom: 10px;
+  margin: 10px;
 }
 
 .user-header img {
@@ -260,6 +268,50 @@ header {
 .user p {
   text-align: center;
   font-size: 15px;
+}
+
+.users {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.users .user {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 100px;
+  width: 250px;
+  border-radius: 10px;
+  color: black;
+  cursor: pointer;
+  transition: 400ms;
+
+  border-radius: 10px;
+  background: #FFF4E0;
+  background-color: #FFF4E0;
+  border: 1px solid #444F5A;
+  padding: 10px;
+  width: auto;
+}
+
+.users .user p.tip {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.users .user p.second-text {
+  font-size: .7em;
+}
+
+.users .user:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.users:hover > .user:not(:hover) {
+  filter: blur(2px);
+  transform: scale(0.9, 0.9);
 }
 
 footer {

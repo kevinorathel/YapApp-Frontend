@@ -20,6 +20,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
 
     <title>Home | YapApp</title>
     <link rel="stylesheet" href="frontend.css">
@@ -27,32 +28,40 @@
   </head>
   
   <body>
-      
-      <!-- <nav class="navbar navbar-expand-md navbar-dark">
-        <div class="title-container">
-          <div class="msg-title-container"></div>
-          <div class="user-title-container"></div>
-        </div>
-      </nav> -->
 
       <div class="container">
 
         <div class="user-container">
 
-          <div id="users"></div>
-          
+          <div class="title-bar-user">
+            <input class="search-input" placeholder="Search" name="text" type="text" required="" id="search-input">
+          </div>
+
+          <div class="users">
+          </div>
+        
         </div>
 
 
         <div class = 'msg-container'>
+
+          <div class="title-bar-user">
+            <div class="title-container">
+              <img src="../images/Jimbei Griffin.jpg" alt="Group DP">
+              <p>The Very First YapApp Group!!!</p>
+            </div>
+          </div>
               
-          <div id="msgs"></div>
+          <div id="msgs">
+          </div>
+
           <div class="textbox" id="new-msg">
             <form>
               <input class="input" placeholder="Type a message" name="text" type="text" required="" id="msg-input">
               <button type="submit" class="button">Send</button>
             </form>
           </div>
+
         </div>
 
 
