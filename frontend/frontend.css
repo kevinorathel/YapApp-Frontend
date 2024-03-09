@@ -25,7 +25,7 @@ body {
 .title-bar-user p{
   flex: 1;
   font-family: "Madimi One", sans-serif;
-  font-weight: 400;
+  font-weight: bold;
   font-style: normal;
   font-size: x-large;
   margin-left: 20px;
@@ -231,7 +231,7 @@ body {
 .msg-header h2 {
   margin: 0;
   font-size: 18px;
-  font-weight: b;
+  font-weight: bold;
 }
 
 .msg p {
