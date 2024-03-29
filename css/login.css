@@ -1,22 +1,31 @@
 body{
-    background-color: #DCFFB7;
+    background-color: #F7EFE5;
     font-family: 'Montserrat', sans-serif;
+    background-image: url('../images/standard-bg.png');
 }
 
 /* Navigation Bar */
 
 .navbar{
-    background-color: #AD8B73;
+    background-color: #FDDA16;
     padding-bottom: 3rem; 
 }
 
+.inner-div{
+  margin-top: 2%;
+  margin-left: 4%;
+}
+
 #branding{
-    color: #A7D397;
-    font-family: 'Lilita One', cursive;
-    font-size: 2.5rem;
-    font-weight: bold;  
-    margin-top: 2%;
-    margin-left: 4%;
+  font-family: "Cherry Bomb One", system-ui;
+  font-size: 4rem;
+  font-weight: bold; 
+  -webkit-text-stroke: 0.1px black; 
+}
+
+.logo{
+  width: 4rem; 
+  margin-bottom: 28px;
 }
 
 #navbarSupportedContent{
@@ -27,6 +36,11 @@ body{
 .nav-item{
     margin-left: 15px;
     margin-right: 15px;
+}
+
+.nav-item:hover{
+  border-radius: 10px;
+  background-color: #FFCA03;
 }
 
 /* Card */
@@ -107,7 +121,7 @@ li{
   }
 
   .card, .card-header, .card-body{
-    background-color: #E1F0DA;
+    background-color: #EDE4E0;
   }
 
  .form-control {
