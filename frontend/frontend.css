@@ -17,7 +17,7 @@ body {
 
 .title-bar-user{
   height: 8%;
-  background-color: #675D50;
+  background-color: #F6D776;
   margin-bottom: 10px;
   border: solid 1px #3E3232;
 }
@@ -84,10 +84,11 @@ body {
 .msg-container {
   flex: 1;
   overflow-y: auto;
+  background-image: url('../images/standard-bg.png');
 }
 
 .user-container {
-  background-color: #B3A398;
+  background-color: #B4B4B3;
   width: 26%;
   overflow-y: auto;
 }
@@ -99,7 +100,7 @@ body {
   width: 74%;
   padding: 10px;
   box-sizing: border-box;
-  background-color: #739072;
+  background-color: #45474B ;
 }
 
 .input {
@@ -111,7 +112,7 @@ body {
   color: #000000;
   transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 90%;
-  background-color: #E7F6F2;
+  background-color: #FFFFEC;
 }
 
 .input:focus, input:valid {
