@@ -145,3 +145,7 @@ button:hover {
 .card, .card-header, .card-body{
   background-color: #EDE4E0;
 }
+
+.footer{
+  margin-top: 125px;
+}
